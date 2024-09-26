@@ -34,6 +34,8 @@ Select * from AddressBook where city = 'Lucknow' OR state = 'Maha';
 
 Select city,state, count(*) AS total_contacts from AddressBook group by city,state;
 
+Select * from AddressBook order by firstname,lastname asc;
+
 
 
 
