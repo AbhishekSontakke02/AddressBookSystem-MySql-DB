@@ -36,6 +36,18 @@ Select city,state, count(*) AS total_contacts from AddressBook group by city,sta
 
 Select * from AddressBook order by firstname,lastname asc;
 
+Alter Table AddressBook ADD COLUMN BookName VARCHAR(50) after id,ADD COLUMN BookType VARCHAR(50) after id;
+update AddressBook set BookType = 'Family' where firstname = 'Ashwini' OR firstName = 'Riya';
+update AddressBook set BookType = 'Friends' where firstname = 'Siya' OR firstName = 'shree';
+update AddressBook set BookType = 'Profession' where firstname = 'Bill';
+
+update AddressBook set BookName = 'FamilyBook' where firstname = 'Ashwini' OR firstName = 'Riya';
+update AddressBook set BookName = 'FriendsBook' where firstname = 'Siya' OR firstName = 'shree';
+update AddressBook set BookName = 'ProfessionBook' where firstname = 'Bill';
+
+
+
+
 
 
 
