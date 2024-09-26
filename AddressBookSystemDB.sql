@@ -45,6 +45,8 @@ update AddressBook set BookName = 'FamilyBook' where firstname = 'Ashwini' OR fi
 update AddressBook set BookName = 'FriendsBook' where firstname = 'Siya' OR firstName = 'shree';
 update AddressBook set BookName = 'ProfessionBook' where firstname = 'Bill';
 
+select BookType , count(*) as total_contacts from Addressbook group by BookType; 
+
 
 
 
