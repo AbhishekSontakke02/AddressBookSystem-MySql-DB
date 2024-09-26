@@ -30,6 +30,10 @@ UPDATE AddressBook SET state = 'Maha' , zip = '412334',city = 'New Mumbai' WHERE
 
 Delete from AddressBook where firstname = 'Rohn' AND lastname = 'Doe';
 
+Select * from AddressBook where city = 'Lucknow' OR state = 'Maha';
+
+
+
 
 
 
