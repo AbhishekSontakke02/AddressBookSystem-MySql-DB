@@ -32,6 +32,10 @@ Delete from AddressBook where firstname = 'Rohn' AND lastname = 'Doe';
 
 Select * from AddressBook where city = 'Lucknow' OR state = 'Maha';
 
+Select city,state, count(*) AS total_contacts from AddressBook group by city,state;
+
+
+
 
 
 
