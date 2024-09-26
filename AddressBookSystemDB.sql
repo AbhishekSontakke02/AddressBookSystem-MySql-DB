@@ -47,6 +47,14 @@ update AddressBook set BookName = 'ProfessionBook' where firstname = 'Bill';
 
 select BookType , count(*) as total_contacts from Addressbook group by BookType; 
 
+Insert into AddressBook(BookType,BookName,firstname,lastname,address,city,state,zip,phoneNo,email) values
+('Profession','ProfessionalBook','Aditi','Jadhav','12 bhosari' ,'Mumbai','Maha',345445,'8789877898','jadhav12@gmail.com');
+Insert into AddressBook values(8,'Family','FamilyBook','Ajinkya','Gore','Adarsh nagar','Solapur','Guj','413256','9878787878','ajgar12@gmail.com');
+
+Insert into AddressBook(BookType,BookName,firstname,lastname,address,city,state,zip,phoneNo,email) values
+('Friends','FriendsBook','Vaishu','Chavan','62 Taljai' ,'Dharashiv','Maha',858745,'9789877698','chavan12@gmail.com');
+
+
 
 
 
